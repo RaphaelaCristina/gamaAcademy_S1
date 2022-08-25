@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title> Página para exercícios HTML | Gama Academy </title>  
+
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Texto descritivo da página web"/>
+    <meta name="author" content="Gama Academy"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="script.js"> </script>
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="logogama.png" alt="Logo da Empresa" title="Logo da Empresa"/>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+
+         <!-- Lista Desordenada-->
+         <ul type="circle">
+            <!-- type define o tipo de marcador -->
+            <li>Item um</li>
+            <li>Item dois</li>
+        </ul>
+
+        <!-- Lista Ordenada -->
+        <ol start="2" type="I">
+            <!-- start é um atributo para decidir em qual número a lista irá iniciar -->
+            <!-- type define o tipo de marcador -->
+            <li>Item um</li>
+            <li>Item dois</li>
+            <li>Item três</li>
+        </ol>
+
+        <!-- Lista de Definição -->
+        <dl>
+            <dt>Palavra um </dt>
+            <dd>Definição da Palavra um</dd>
+            <dt>Palavra dois</dt>
+            <dd>Definição da Palavra dois</dd>
+        </dl>
+
+        <!-- Tabela -->
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th> Mês da Atividade </th>
+                    <th> Nome da Atividade </th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td colspan="2"> Janeiro </td>
+                    <!-- O atributo colspan define que essa coluna irá usar o espaço 
+                    de 2 colunas, considerando o número de colunas da tabela-->>
+                </tr>
+
+                <tr>
+                    <td> Fevereiro </td>
+                    <td rowspan="2"> Meditação </td>
+                    <!-- O atributo rowpsan define que essa coluna irá ocupar nesse caso 2 linhas
+                    representando que a atividade foi feita em Fevereiro e Março -->>
+                </tr>
+
+                <tr>
+                    <td> Março </td>  
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+
+                <tr>
+                    <td> Total Atividade </td>
+                    <td> 3 atividades </td>
+                </tr>
+
+            </tfoot>
+
+        </table>
+    </main>
+
+ <!-- Rodapé -->
+ <footer>
+
+</footer>
+<!-- Fim do Rodapé -->
+
+</body>
+</html>
