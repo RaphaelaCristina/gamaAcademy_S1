@@ -6,11 +6,11 @@
 function calculeMedia(nota1, nota2, nota3) {
     const media = (nota1 + nota2 + nota3) / 3;
     if (media >= 7) {
-        return "Aprovado";
+        return 'Aprovado';
     } else if (media < 7 && media >= 5) {
-        return "Recuperação";
+        return 'Recuperação';
     } else {
-        return "Reprovado";
+        return 'Reprovado';
     }
 }
 
