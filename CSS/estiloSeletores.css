@@ -1,0 +1,54 @@
+/* Seleciona todos os elementos do meu css*/
+* {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/*#primeiro {
+    border: 1px solid green;
+    margin: 30px;
+}
+
+.segundo {
+    border: 5px solid black;
+    padding: 15px;
+}*/
+
+/* Navegando pela classe no css */
+/* Nesse trecho, ele está procurando um span que esteja dentro do nav, que esteja dentro do navigation */
+nav span {
+    color: indigo;
+    cursor: pointer;
+    transition: 300ms;
+
+}
+
+/* O hover quando passamos o mouse muda o stilo */
+nav span:hover {
+    text-decoration: underline;
+    color: black;
+    background-color: lightcoral;
+}
+
+/* Colocando várias classes com o mesmo estilo */
+#primeiro,
+.segundo,
+.navigation {
+    border: 5px solid black;
+    padding: 15px;
+    margin: 5px;
+}
+
+/* O maior p " > " faz com que o css procure a classe e aplique nos filhos direto */
+.segundo>p {
+    color: lawngreen;
+}
+
+.segund > div{
+    display: block !important;
+}
+
+
+
