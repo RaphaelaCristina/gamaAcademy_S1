@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/09f3210ef6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Raphaela Cristina</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.JPG" alt="Logo Raphaela Cristina" width="250">
+        </div>
+        <ul>
+            <li>
+                <a href="https://github.com/RaphaelaCristina" target="_blank"> <img src="GitHub-Mark.png"
+                        width="50px" /> </a>
+            </li>
+
+            <li>
+                <a href="https://wa.me/11949369273" target="_blank"><img src="whats.png" width="50px" /> </a>
+            </li>
+
+            <li>
+                <a href="mailto: raphitasp@msn.com" target="_blank"><img src="email.png" width="50px" /></a>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+
+        <section class="container">
+
+            <div class="name">
+                <h1>RAPHAELA CRISTINA</h1>
+                <h5>Backend Developer</h5>
+            </div>
+
+            <div onclick = "displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <div style="display: none ;" id="about">
+                <p>
+                    Sou uma mulher negra, tenho 25 anos e moro na Zona Leste de São Paulo.
+                    Atualmente estou fazendo o curso Mulheres em Cloud da Gama Academy em parceria com a McKinsey &
+                    Company e estudando para aumentar meus conhecimentos e conseguir a certificação Cloud Practitioner -
+                    AWS.
+                </p>
+                <p>
+                    Após atuar por um ano e quatro meses como estagiária DBA SQL Server,
+                    em Julho/2021 migrei para uma squad de desenvolvimento backend, que utiliza o Java como linguagem,
+                    SpringBoot como framework, MySQL e Redis como bancos de dados, AWS como infraestrutura,
+                    e Observability com as ferramentas Splunk, Kiali e AppDynamics.
+                </p>
+
+
+            </div>
+
+            <div class="form">
+                <div>
+                    <p> Deixe seu contato! </p>
+                </div>
+                <input type="text" placeholder="Seu melhor e-mail :) ">
+                <button>Enviar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>

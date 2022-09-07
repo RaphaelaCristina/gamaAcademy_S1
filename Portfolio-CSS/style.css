@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(255, 248, 250);
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+ul {
+    list-style: none;
+    /*Retirar o estilo da lista */
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    /*Retirar o estilo dos links */
+}
+
+body {
+    /*background-image: url(background.jpg) ;
+    background-repeat: no-repeat ;
+    background-position: center center fix ; */
+    background: url(background2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 1px 1px 10px 1px #fff;
+    margin-bottom: 45px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    display: flex;
+    padding: 15px;
+    border-bottom: 3px dashed rgba(145, 109, 160, 0.726);
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 52px;
+    padding: 10px;
+}
+
+.container .name h5 {
+    font-size: 28px;
+}
+
+/* Criar classe no JS para rotacionar a arrow */
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#animation {
+    transition: 300ms;
+}
+
+#arrow {
+    font-size: 36px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+
+}
+
+#about p {
+    max-width: 650px;
+    /*Responsividade */
+    margin: 0 auto;
+    letter-spacing: 2.5px;
+    background-color: #c959c165;
+    color: rgba(236, 203, 236, 0.952);
+    font-weight: 750;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    /*border: thick double rgba(145, 109, 160, 0.726);*/
+    padding: 25px;
+}
+
+.form input {
+    width: 55%;
+    color: #001250;
+    padding: 5px 10 px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 30px;
+}
+
+.form button {
+    width: 15%;
+    color: #001250;
+    padding: 5px 10 px;
+    background: linear-gradient(to right, #C71585 50%, #8A2BE2 35%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #D2B48C;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 5px;
+    /*margin-left: -5px;*/
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: #DEB887;
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 768px) {
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+}
